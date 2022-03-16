@@ -1,0 +1,20 @@
+% görsel üzerinde iþlemler 
+%Parlaklýk arttýrma
+
+%I = imread('D:/Matlab/img/lena.png');
+%I2 = imadd(I,75);
+%figure
+%subplot(1,2,1), imshow(I), title('Orjina Görsel');
+%subplot(1,2,2), imshow(I2), title('Parlaklýk Arttýrýlmýþ Görsel');
+
+
+I = imread('D:/Matlab/img/lena.png');
+J = imread('D:/Matlab/img/dog.jpg');
+figure
+subplot(1,2,1), imshow(I), title('Orjina Görsel');
+subplot(1,2,2), imshow(J), title('Deðiþtirilmiþ Görsel');
+diffim = imsubtract(I,J);
+diffim2 = imabsdiff(I,J);
+figure
+subplot(2,2,1), imshow(diffim), title('Çýkarýlan Görsel');
+

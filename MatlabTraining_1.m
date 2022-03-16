@@ -47,10 +47,10 @@ ans =
 
     0.5488
 %for ile fonksiyon hesapla y= ? i:1 , n:6 (i^2-3)' ün her deðiþimin durumu gösterilerek hesaplanmasý
- 
+ top=0
  for ( t=1:6)
 y=(t^2)-3
-
+top=top+y
 disp(y)
 end
 
